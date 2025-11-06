@@ -1,0 +1,141 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.quotes_header {
+background-color: #1b1b1b;
+color:#a83d3d ;
+display: flex;
+flex-flow: column wrap;
+align-items: center;
+
+}
+.quotes_header h2{
+    padding: 15px; 
+    font-size: 1.4em;
+    font-style: italic;
+     font-family: 'MedievalSharp', cursive;
+}
+.quotes_header blockquote{
+    font-size: 1.6em;
+     font-style: italic;
+}
+.blockquotes {
+    background-color: #1b1b1b;
+}
+.quotes-list {
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+  gap: 30px;
+  padding: 60px 20px;
+  background-color: #0d0d0d;
+   max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quote-block {
+  background-color: #1a1a1a;
+  border-left: 4px solid #7a0606;
+  padding: 20px 30px;
+  font-style: italic;
+  color: #ccc;
+  font-size: 1.4em;
+  text-shadow: 0 0 6px #000;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quote-block:hover {
+  background-color: #2b0e0e;
+  transform: scale(1.02);
+  box-shadow: 0 0 12px #7a0606;
+}
+
+.quote-block span {
+  display: block;
+  margin-top: 10px;
+  color: #a83d3d;
+  font-size: 0.9em;
+  font-style: normal;
+  text-align: right;
+}
+.fragments-list {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.lore-fragment {
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: 'Grenze Gotisch', serif;
+    color: #bf4f4f;
+    padding: 10px;
+}
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.lore-fragment {
+  animation: flicker 4s infinite ease-in-out;
+}
+.lore-fragments h2 {
+  font-style: italic;
+  font-size: 2em;
+  font-family: 'Grenze Gotisch', serif;
+  color: #bf4f4f;
+  padding: 10px;
+  text-align: center;
+}
+@keyframes tremble {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(1px); }
+  50% { transform: translateX(-1px); }
+  75% { transform: translateX(1px); }
+  100% { transform: translateX(0); }
+}
+.lore-fragment:hover {
+  animation: tremble 0.5s infinite;
+}
+.campfire-thought {
+  background: radial-gradient(circle at center, #1e0f0f 0%, #0a0505 100%);
+  padding: 60px 20px;
+  text-align: center;
+  color: #e6b98c;
+  font-style: italic;
+  font-family: 'Grenze Gotisch', serif;
+  text-shadow: 0 0 10px #552, 0 0 20px #822;
+  border-top: 1px solid #331a1a;
+  margin-top: 80px;
+}
+
+.campfire-thought blockquote {
+  font-size: 2.1em;
+  animation: emberPulse 5s infinite ease-in-out;
+}
+@keyframes emberPulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #fff, 0 0 30px #c94;
+  }
+  50% {
+    text-shadow: 0 0 6px #552, 0 0 15px #822;
+  }
+}
+
+
+.campfire-thought span {
+  display: block;
+  font-size: 1.6em;
+  color: #a67c52;
+  opacity: 0.8;
+}
+
+.text_spoiler,.text {
+font-style: italic;
+  font-family: 'Grenze Gotisch', serif;
+  text-shadow: 0 0 10px #552, 0 0 20px #822;
+    font-size: 1.5em;
+    color: #ccc;
+}
+
