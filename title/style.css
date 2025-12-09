@@ -16,8 +16,6 @@ header {
     text-decoration: none;
     color: #cccccc;
     font-size: 1.5em;
-
- 
 }
 a:hover {
   color: #ff4444;
@@ -301,3 +299,26 @@ font-size: 1.6em;
   75% { transform: translateX(2px); }
    75% { transform: translateY(3px); }    
  }
+footer {
+  background-color: #0d0d0d;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'MedievalSharp',cursive;
+  font-size: 1.3em;
+  color: #777;
+  border: 1px solid #333;
+}
+footer p {
+  margin:  5px 0;
+  color:  #666;
+  font-style: italic;
+}
+.fragments span {
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.fragments span.is-highlighted {
+  color: #f6c888e6; 
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  transform: translateX(4px);
+}

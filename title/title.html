@@ -3,6 +3,7 @@
 <head>
    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Прах и безумие</title>
@@ -10,14 +11,12 @@
 <body>
 <header>
 <nav>
-    <a href="">Главная</a>
-    <a href="">Герои</a>
-    <a href="">Цитаты</a>
-    <a href="../quote/quote.html">Арты</a>
+    <a href="../heroes/heroes.html">Герои</a>
+    <a href="../quote/quote.html">Цитаты</a>
+    <a href="../arts/arts.html">Арты</a>
 </nav>
 </header>
 <section class="hero">
-    <!-- <audio src="../media/audio/welcome-home.mp3"controls></audio> -->
   <h1 class="site-title">Глубже во тьму </h1>
   <p class="site-quote">"Омерзение пульсирует и гноится…"</p>
 </section>
@@ -32,7 +31,7 @@
 
     <div class="hero-card jester">
       <img src="" alt="Шут">
-       <!-- <audio src="../media/audio/jester-final.mp3"controls></audio> -->
+       <audio id="jester-sound" src="../media/audio/jester-final.mp3"></audio>
       <h3>Шут</h3>
       <p>Смех — лишь маска на бездне. Он играет на струнах боли, и каждый аккорд зовёт безумие.</p>
     </div>
@@ -78,7 +77,12 @@
     <span>Шёпот зовёт по имени.</span>
   </div>
 </section>
-
-
+<footer>
+<p>Прах и безумие - Фан зона во тьме</p>
+<p>© 2025, не освещено ни одной свечой</p>
+</footer>
+<audio id="stress-sound" src="../media/audio/stress.mp3"></audio>
+<audio id="intro-sound" src="../media/audio/welcome-home.mp3"></audio>
+<script src="scripts.js" defer></script>
 </body>
 </html>
